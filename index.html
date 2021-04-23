@@ -16,33 +16,35 @@
   <body>
     <div id="container">
       <header class="text-center">
-        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
         <p id="description">
-          Thank you for taking the time to help us improve the platform
+          Thank you for taking the time to help us improve the platform!
         </p>
       </header>
 
       <form id="survey-form">
         <div class="mb-3">
-          <label for="name" id="name-label" class="form-label">Name</label>
+          <label for="name" id="name-label" class="form-label">Name:</label>
           <input
             type="text"
             class="form-control"
             id="name"
             placeholder="Type your name here"
+            required
           />
         </div>
         <div class="mb-3">
-          <label for="email" id="email-label" class="form-label">Email</label>
+          <label for="email" id="email-label" class="form-label">Email:</label>
           <input
             type="email"
             class="form-control"
             id="email"
             placeholder="Type your email here"
+            required
           />
         </div>
         <div class="mb-3">
-          <label for="number" id="number-label" class="form-label">Age</label>
+          <label for="number" id="number-label" class="form-label">Age:</label>
           <input
             type="number"
             class="form-control"
@@ -71,6 +73,7 @@
               type="radio"
               name="flexRadioDefault"
               id="flexRadioDefault1"
+              value="definitely"
             />
             <label class="form-check-label" for="flexRadioDefault1">
               Definitely
@@ -82,9 +85,10 @@
               type="radio"
               name="flexRadioDefault"
               id="flexRadioDefault2"
+              value="maybe"
             />
             <label class="form-check-label" for="flexRadioDefault2">
-              Maybye
+              Maybe
             </label>
           </div>
           <div class="form-check">
@@ -93,6 +97,7 @@
               type="radio"
               name="flexRadioDefault"
               id="flexRadioDefault3"
+              value="notSure"
               checked
             />
             <label class="form-check-label" for="flexRadioDefault3">
@@ -108,7 +113,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Front-end Projects
           </label>
           <label>
@@ -116,7 +121,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Back-end Projects
           </label>
           <label>
@@ -124,7 +129,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Data Visualization
           </label>
           <label>
@@ -132,7 +137,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Challenges
           </label>
           <label>
@@ -140,7 +145,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Open Source Community
           </label>
           <label>
@@ -148,7 +153,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Gitter help rooms
           </label>
           <label>
@@ -156,7 +161,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Videos
           </label>
           <label>
@@ -164,7 +169,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />City Meetups
           </label>
           <label>
@@ -172,7 +177,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Wiki
           </label>
           <label>
@@ -180,7 +185,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Forum
           </label>
           <label>
@@ -188,7 +193,7 @@
               name="prefer"
               value="front-end-projects"
               type="checkbox"
-              class="input-checkbox"
+              class="input-checkbox mx-2"
             />Additional Courses
           </label>
         </div>
@@ -201,9 +206,7 @@
             id="floatingTextarea"
           ></textarea>
         </div>
-        <button type="submit" id="submit" class="btn btn-warning">
-          Submit
-        </button>
+        <button type="submit" id="submit" class="btn my-3 w-100">Submit</button>
       </form>
     </div>
   </body>
